@@ -1,2 +1,2 @@
 # TantaLibrary
-inspired from (https://www.youtube.com/watch?v=5Y5QKfxTErU)[this project]
+inspired from [Link to YouTube video](https://www.youtube.com/watch?v=5Y5QKfxTErU)
