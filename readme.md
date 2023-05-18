@@ -5,22 +5,22 @@
 ![Alt text](assets/Pasted%20image%2020230518101208.png)
 
 # Tanta Library
-~~- [x]  BOOK schema and  CRUD operations 💀 @hazem 
+- [x]  BOOK schema and  CRUD operations 💀 @hazem ✅
 - [ ] User schema and Crud Operations 💀 @hazem
 
 ## login  page
 ![Alt text](assets/Pasted%20image%2020230518101208.png)
-~- [x] link to register (already have an account) 🥸
+- [x] link to register (already have an account) 🥸 ✅
 - [ ] remove services and contacts 🥸  @Elshafey
 - [ ] check authentication 💀 @Yousef
 - [ ] after login link to  the only available page (Allbooks page) 🥸 @Elshafey
 ## Register Page
 ![Alt text](assets/Pasted%20image%2020230518091332.png)
-~~- [x] link to login (Donot Have an Account ) 🥸 
+- [x] link to login (Donot Have an Account ) 🥸 ✅
 ## header 
-~- [x] available in all register and login pages🥸 
-~[x]   has contacts link 🥸 
-~- [x] has login button  🥸 
+- [x] available in all register and login pages🥸 ✅
+- [x]   has contacts link 🥸 ✅
+- [x] has login button  🥸 ✅
 - [ ] use POST request to add new user  🥸 @Elshafey
 ## All Books page
 ![Alt text](assets/Pasted%20image%2020230518093550.png)
