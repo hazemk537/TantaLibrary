@@ -1,0 +1,49 @@
+بسم الله الرحمن الرحيم
+
+# المطلوب 
+![[Pasted image 20230518101208.png]]
+
+# Tanta Library
+- BOOK schema and  CRUD operations 💀 @hazem ✅
+- User schema and Crud Operations 💀 @hazem
+
+**login  page**
+![[Pasted image 20230518091408.png]]
+1. link to register (already have an account) 🥸 ✅
+2. remove services and contacts 🥸  @Member 2 Elshafey
+3. check authentication 💀 @Yousef Shaib
+4. after login link to  the only available page (Allbooks page) 🥸 @Member 2 Elshafey
+**Register Page** 
+![[Pasted image 20230518091332.png]]
+2. link to login (Donot Have an Account ) 🥸 ✅
+**header **
+1. available in all register and login pages🥸 ✅
+2.   has contacts link 🥸 ✅
+3. has login button  🥸 ✅
+4. use POST request to add new user  🥸 @Member 2 Elshafey
+All Books 
+![[Pasted image 20230518093550.png]]
+1. grid of books for all users using Get book Request 🥸  @Member 2 Elshafey
+2. on click show book description in a details page  🥸 @Member 2 Elshafey
+3. for  admin show new,edit book buttons  🥸 @Member 2 Elshafey
+4. for admin show delete icon on every book to delete on click 🥸 @Member 2 Elshafey
+![[Pasted image 20230518100338.png]]
+![[Pasted image 20230518100427.png]]
+4. when click delete show confirmation message 🥸 @Member 2 Elshafey
+5. when click new link to **new  book popup ** 🥸 @Mahmoud sharkawy vf 
+6. when click edit link to** edit book popup**🥸 @Mahmoud sharkawy vf
+7. search bar to search for specific book  🥸💀
+**book details page**
+- on click show all book details
+**new  book popup ** 
+- make pop up ui with empty data  form🥸 @Mahmoud sharkawy vf
+- use POST request to add book🥸 @Mahmoud sharkawy vf
+**edit book popup **
+- make pop up ui with all stored data in form to edit them🥸 @Mahmoud sharkawy vf
+- use PUT request to edit book🥸 @Mahmoud sharkawy vf 
+- when click delete use Delete book request🥸 @Mahmoud sharkawy vf 
+
+**deploy to vercel**  💀 @Yousef Shaib
+
+
+
