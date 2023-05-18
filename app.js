@@ -2,16 +2,16 @@ const express = require("express")
 const mongoose =require("mongoose");
 const router = require("./routes/books-route");
 const loginRouter = require("./routes/login-route");
-const signUpRouter = require("./routes/signup-route");
+const signUpRouter = require("./routes/register-route");
 const app=express()
 
 
 //routes
 app.use(express.json());
-app.use("/login", loginRouter);
 
-// app.use("/",router)
-// app.use("/signup", signUpRouter);
+app.use("/",router)
+app.use("/login", loginRouter);
+app.use("/signup", signUpRouter);
 
 
 
