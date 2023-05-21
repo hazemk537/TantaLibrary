@@ -14,13 +14,13 @@
 - [x] link to register (already have an account) 🥸 ✅
 - [x remove services and contacts 🥸  @Elshafey
 - [ ] check authentication 💀 @Yousef
-- [ ] after login link to  the only available page (Allbooks page) 🥸 @Elshafey
+- [x] after login link to  the only available page (Allbooks page) 🥸 @Elshafey
 ## Register Page
 ![Alt text](assets/Pasted%20image%2020230518091332.png)
-- [x link to login (Donot Have an Account ) 🥸 ✅
+- [x] link to login (Donot Have an Account ) 🥸 ✅
 ## header 
 - [x]available in all register and login pages🥸 ✅
-- [x   has contacts link 🥸 ✅
+- [x]   has contacts link 🥸 ✅
 - [x] has login button  🥸 ✅
 - [ ] use POST request to add new user  🥸 @Elshafey
 ## All Books page
@@ -39,7 +39,7 @@
 - [ ] on click show all book details
 ## new  book popup  
 - [ ] make pop up ui with empty data  form🥸 @sharkawy vf
-- [ ] use POST request to add book🥸 @Mahmoud sharkawy vf
+- [ ] use POST request to add book🥸 @sharkawy vf
 ## edit book popup 
 - [ ] make pop up ui with all stored data in form to edit them🥸 @sharkawy vf
 - [ ] use PUT request to edit book🥸 @sharkawy vf 
