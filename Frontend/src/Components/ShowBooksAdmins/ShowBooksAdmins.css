@@ -1,0 +1,82 @@
+.book
+{
+    position: relative;
+}
+.buttons
+{
+    display: flex;
+}
+.delete-item
+{
+    color: white;
+    background-color: red;
+}
+.book button{
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    top: -30px;
+}
+.edit-book{
+    color: white;
+    background-color: darkcyan;
+}
+
+.add
+{
+    color: white;
+    background-color: rgb(216, 73, 16);
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    top: -30px;
+}
+
+
+/*handle edit page*/
+.put{
+    min-height: 100vh;
+    background-image: url("../../../../assets/hero.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.put .container
+{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.put .container .picture
+{
+    width: 500px;
+    height: 200px;
+}
+.put .container .content
+{
+   width: 300px;
+   height: 300px;
+}
+.put .form
+{
+    display: flex;
+    justify-content: space-between;
+}
+.form label{
+    color: rgb(216, 73, 16);
+    /* font-weight: 600;
+    font-size: 16px;
+} */
+}
+.content .familar
+{
+    min-width: 300px;
+    height: 30px;
+    border-radius: 2px solid gray;
+}
