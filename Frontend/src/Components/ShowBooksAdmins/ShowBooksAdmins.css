@@ -1,0 +1,138 @@
+.book
+{
+    position: relative;
+}
+.buttons
+{
+    display: flex;
+}
+.delete-item
+{
+    color: white;
+    background-color: red;
+}
+.book button{
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    top: -30px;
+}
+.edit-book{
+    color: white;
+    background-color: darkcyan;
+}
+
+.add
+{
+    color: white;
+    background-color: rgb(216, 73, 16);
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    top: -30px;
+}
+
+/*handle edit page*/
+.put{
+    height: 100vh;
+    background-image: url("../../../../assets/hero.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.put .container
+{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 80%;
+}
+.put .container .picture img
+{
+    width: 300px;
+    height: 300px;
+}
+.put .container .content
+{
+   margin-left: 30px;
+}
+.put .form
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.form label{
+    color: rgb(216, 73, 16);
+    font-weight: 600;
+    font-size: 16px;
+}
+.content .familar
+{
+    min-width: 300px;
+    height: 30px;
+    border-radius: 2px solid gray;
+    border-radius: 10px;
+    background-color: aqua;
+}
+.content .submit
+{
+    padding: 10px;
+    background-color: black;
+    color: rgb(141, 114, 114);
+    cursor: pointer;
+    color: white;
+}
+
+/*handle post request*/
+
+.post{
+    height: 100vh;
+    background-image: url("../../../../assets/hero.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.post .form{
+    padding: 10px;
+}
+
+.content .input
+{
+    min-width: 300px;
+    height: 30px;
+    border-radius: 2px solid gray;
+    border-radius: 10px;
+    background-color: rgb(177, 185, 185);
+}
+.content .submit
+{
+    padding: 10px;
+    background-color: black;
+    color: rgb(141, 114, 114);
+    border-radius: 3px solid gray;
+    cursor: pointer;
+    color: white;
+}
+.post label{
+    color: rgb(216, 73, 16);
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 10px;
+}
