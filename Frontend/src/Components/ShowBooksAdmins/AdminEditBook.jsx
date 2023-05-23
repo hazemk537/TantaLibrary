@@ -31,42 +31,40 @@ const AdminEditBook=()=>{
         return navigate("/Admins/Books/")
     }
     return(
-        <div>
             <div className="put">
                 <div className="container">
-                <div className="picture">
-                    <img src={book.image_url} alt="#"/>
-                </div>
-               <div className="content">
-                <div className="form">
-                    <label>Title</label>
-                    <input className="title-input familar" type="text" name="title" value={book.title} onChange={handlechange}/>
-                </div>
-                <div className="form">
-                    <label>Authors</label>
-                    <input className="author-input familar" type="text" name="authors" value={book.authors} onChange={handlechange}/>
-                </div>
-                <div className="form">
-                    <label>description</label>
-                    <input className="description-input familar" type="text" name="description" value={book.description} onChange={handlechange}/>
-                </div>
-                <div className="form">
-                    <label>price</label>
-                    <input className="price-input familar" type="Number" name="price" value={33} onChange={handlechange}/>
-                </div>
-                <div className="form">
-                    <label>totalsells</label>
-                    <input className="totalsells-input familar" type="Number" name="totalsells" value={33} onChange={handlechange}/>
-                </div>
-                <div>
-                    <button onClick={handlesubmit} className="submit">Submit</button>
-                </div>
+                    <div className="picture">
+                        <img src={book.image_url} alt="#"/>
+                    </div>
+                <div className="content">
+                    <div className="form">
+                        <label>Title</label>
+                        <input className="title-input familar" type="text" name="title" value={book.title} onChange={handlechange}/>
+                    </div>
+                    <div className="form">
+                        <label>Authors</label>
+                        <input className="author-input familar" type="text" name="authors" value={book.authors} onChange={handlechange}/>
+                    </div>
+                    <div className="form">
+                        <label>description</label>
+                        <input className="description-input familar" type="text" name="description" value={book.description} onChange={handlechange}/>
+                    </div>
+                    <div className="form">
+                        <label>price</label>
+                        <input className="price-input familar" type="Number" name="price" value={33} onChange={handlechange}/>
+                    </div>
+                    <div className="form">
+                        <label>totalsells</label>
+                        <input className="totalsells-input familar" type="Number" name="totalsells" value={33} onChange={handlechange}/>
+                    </div>
+                    <div>
+                        <button onClick={handlesubmit} className="submit">Submit</button>
+                    </div>
 
                 </div>
                 
                </div>
                
-        </div>
         </div>
     )
 }

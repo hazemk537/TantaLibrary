@@ -1,6 +1,7 @@
 import axios from "axios";
 import {useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./ShowBooksAdmins.css"
 
 const AdminAddBook=()=>{
     const [image_url,setimage]=useState("");
@@ -43,33 +44,40 @@ const AdminAddBook=()=>{
     return(
         <div>
             <form className="post">
-                <div className="picture">
+               <div className="content">
+
+               <div className="form">
                     <label >image</label>
                     <input type="file" name="image_url" onChange={handleimage}></input>
                 </div>
-               <div className="content">
-                <div className="title">
+
+                <div className="form">
                     <label>Title</label>
-                    <input className="title-input" type="text" name="title" placeholder="title" value={title} onChange={(e)=>settitle(e.target.value)}/>
+                    <input className="title-input input" type="text" name="title" placeholder="title" value={title} onChange={(e)=>settitle(e.target.value)}/>
                 </div>
-                <div className="author">
+
+                <div className="form">
                     <label>Authors</label>
-                    <input className="author-input" type="text" name="authors" placeholder="authors" value={authors} onChange={(e)=>setauthors(e.target.value)}/>
+                    <input className="author-input input" type="text" name="authors" placeholder="authors" value={authors} onChange={(e)=>setauthors(e.target.value)}/>
                 </div>
-                <div className="description">
+
+                <div className="form">
                     <label>description</label> 
-                    <input className="description-input" type="text" name="description"  placeholder="description" value={description} onChange={(e)=>setdescription(e.target.value)}/>
+                    <input className="description-input input" type="text" name="description"  placeholder="description" value={description} onChange={(e)=>setdescription(e.target.value)}/>
                 </div>
-                <div className="price">
+
+                <div className="form">
                     <label>price</label>
-                    <input className="price-input" type="Number" name="price" placeholder="price" value={price} onChange={(e)=>setprice(e.target.value)}/>
+                    <input className="price-input input" type="Number" name="price" placeholder="price" value={price} onChange={(e)=>setprice(e.target.value)}/>
                 </div>
-                <div className="totalsells">
+
+                <div className="form">
                     <label>totalsells</label>
-                    <input className="totalsells-input" type="Number" name="totalsells" placeholder="totalsells" value={totalsells} onChange={(e)=>settotalsells(e.target.value)}/>
+                    <input className="totalsells-input input" type="Number" name="totalsells" placeholder="totalsells" value={totalsells} onChange={(e)=>settotalsells(e.target.value)}/>
                 </div>
-               </div>
+
                <button onClick={handlesubmit} className="submit">Submit</button>
+               </div>
                
         </form>
         </div>
