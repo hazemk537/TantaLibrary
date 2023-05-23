@@ -45,8 +45,8 @@ const AdminAddBook=()=>{
 
     return(
         <div>
-            <form className="post">
         <Header/>
+            <form className="post">
                <div className="content">
 
                <div className="form">
@@ -81,8 +81,8 @@ const AdminAddBook=()=>{
 
                <button onClick={handlesubmit} className="submit">Submit</button>
                </div>
-               <Footer/>
         </form>
+               <Footer/>
         </div>
     )
 }
