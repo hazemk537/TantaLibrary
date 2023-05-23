@@ -2,6 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./ShowBooksAdmins.css"
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const AdminEditBook=()=>{
 
@@ -32,6 +34,7 @@ const AdminEditBook=()=>{
     }
     return(
             <div className="put">
+        <Header/>
                 <div className="container">
                     <div className="picture">
                         <img src={book.image_url} alt="#"/>
@@ -51,7 +54,7 @@ const AdminEditBook=()=>{
                     </div>
                     <div className="form">
                         <label>price</label>
-                        <input className="price-input familar" type="Number" name="price" value={33} onChange={handlechange}/>
+                        <input className="price-input familar" type="Number" name="price" value={11} onChange={handlechange}/>
                     </div>
                     <div className="form">
                         <label>totalsells</label>
@@ -64,6 +67,7 @@ const AdminEditBook=()=>{
                 </div>
                 
                </div>
+               <Footer/>
                
         </div>
     )

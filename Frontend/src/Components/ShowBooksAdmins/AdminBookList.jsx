@@ -4,6 +4,8 @@ import axios from "axios"
 // import Books from "./Books";
 import "../ShowBooks/BookList.css"
 import "./ShowBooksAdmins.css"
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 function AdminBookList (){
     const [books,setbooks]=useState([]);
@@ -22,11 +24,15 @@ function AdminBookList (){
            }).catch((error)=>{console.log(error);})
         }
 
-    const handlechange=async(event)=>{
-        const res= await result.filter(f=>f.title.toLowerCase().includes(event.target.value));
-        setbooks(res);
-        fetchdata();
-    };
+        const handlechange=(event)=>{
+            const res=result.filter(f=>f.title.toLowerCase().includes(event.target.value));
+            setbooks(res);
+            if(res===[])
+            {
+               <h1>no items found</h1>
+            }
+        };
+    
 
     // const handledelete=(id)=>{
     //     console.log("ahmed")
@@ -56,9 +62,10 @@ function AdminBookList (){
 
     return(
         <div>
+            <Header/>
             <div className="main">
                 <div className="container">
-                    <div className="header">
+                    <div className="head">
                         <div>
                         <h1>find book </h1>
                         <input type="text" className="input-text" onChange={handlechange} placeholder="enter book"/>
@@ -98,6 +105,7 @@ function AdminBookList (){
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

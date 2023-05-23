@@ -2,6 +2,8 @@ import axios from "axios";
 import {useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./ShowBooksAdmins.css"
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const AdminAddBook=()=>{
     const [image_url,setimage]=useState("");
@@ -43,6 +45,7 @@ const AdminAddBook=()=>{
 
     return(
         <div>
+        <Header/>
             <form className="post">
                <div className="content">
 
@@ -78,8 +81,8 @@ const AdminAddBook=()=>{
 
                <button onClick={handlesubmit} className="submit">Submit</button>
                </div>
-               
         </form>
+               <Footer/>
         </div>
     )
 }
