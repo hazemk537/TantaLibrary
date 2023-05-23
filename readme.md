@@ -2,7 +2,7 @@
 
 
 # المطلوب 
-![Alt text](assets/Pasted%20image%2020230518101208.png)
+![Alt text](/Frontend/public/Pasted%20image%2020230518101208.png)
 # reference 
 [Youtube](https://www.youtube.com/watch?v=5Y5QKfxTErU)
 # Tanta Library
@@ -10,13 +10,13 @@
 - [x] User schema and Crud Operations 💀 @hazem ✅
 
 ## login  page
-![Alt text](assets/Pasted%20image%2020230518101208.png)
+![Alt text](/Frontend/public/Pasted%20image%2020230518101208.png)
 - [x] link to register (already have an account) 🥸 ✅
 - [x remove services and contacts 🥸  @Elshafey
 - [ ] check authentication 💀 @Yousef
 - [x] after login link to  the only available page (Allbooks page) 🥸 @Elshafey
 ## Register Page
-![Alt text](assets/Pasted%20image%2020230518091332.png)
+![Alt text](/Frontend/public/Pasted%20image%2020230518091332.png)
 - [x] link to login (Donot Have an Account ) 🥸 ✅
 ## header 
 - [x]available in all register and login pages🥸 ✅
@@ -24,13 +24,13 @@
 - [x] has login button  🥸 ✅
 - [ ] use POST request to add new user  🥸 @Elshafey
 ## All Books page
-![Alt text](assets/Pasted%20image%2020230518093550.png)
+![Alt text](/Frontend/public/Pasted%20image%2020230518093550.png)
 - [x] grid of books for all users using Get book Request 🥸  @Elshafey
 - [ ] on click show book description in a details page  🥸 @Elshafey
 - [ ] for  admin show new,edit book buttons  🥸 @Member 2 Elshafey
 - [ ] for admin show delete icon on every book to delete on click 🥸 @Elshafey
-![Alt text](assets/Pasted%20image%2020230518100338.png)
-![Alt text](assets/Pasted%20image%2020230518100427.png)
+![Alt text](/Frontend/public/Pasted%20image%2020230518100338.png)
+![Alt text](/Frontend/public/Pasted%20image%2020230518100427.png)
 - [ ] when click delete show confirmation message 🥸 @Elshafey
 - [ ] when click new link to **new  book popup ** 🥸 @sharkawy vf 
 - [ ] when click edit link to** edit book popup**🥸 @sharkawy vf
