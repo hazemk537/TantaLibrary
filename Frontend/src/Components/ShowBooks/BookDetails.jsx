@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer"
 
 const BookDetails=()=>{
     const {id}=useParams();
@@ -15,6 +17,7 @@ const BookDetails=()=>{
     },[id]);
     return(
         <div>
+            <Header/>
             <div className="book-details">
                 <div className="content">
                 <img src={book.image_url} alt="#"/>
@@ -29,6 +32,7 @@ const BookDetails=()=>{
                 </div>
                
         </div>
+        <Footer/>
         </div>
     )
 }
