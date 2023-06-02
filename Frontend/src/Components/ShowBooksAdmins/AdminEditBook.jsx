@@ -2,6 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./ShowBooksAdmins.css"
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const AdminEditBook=()=>{
 
@@ -9,7 +11,7 @@ const AdminEditBook=()=>{
     const [book,setbook]=useState([]);
     const navigate=useNavigate();
     useEffect(()=>{
-        axios.get(`https://example-data.draftbit.com/books/${id}`).then((res)=>{  //api for get a specific book
+        axios.get(`http://localhost:3001/Books/${id}`).then((res)=>{  //api for get a specific book
         setbook(res.data)
         }).catch((error)=>
         {
@@ -18,23 +20,30 @@ const AdminEditBook=()=>{
     },[id]);
 
 
-
     const handlechange=(e)=>{
         const item={...book}
         item[e.target.name]=e.target.value;
         setbook(item)
+        console.log(book);
     }
 
-    const handlesubmit= async(e)=>{
+    const handlesubmit= (e)=>{
         e.preventDefault();
-        axios.put(`https://example-data.draftbit.com/books/${id}`,book);
+        console.log(book);
+        axios.put(`http://localhost:3001/Books/${id}`,book).then((res)=>{
+            console.log(res);
+        }).catch((err)=>{
+            console.log(err);
+        });
+        
         return navigate("/Admins/Books/")
     }
     return(
             <div className="put">
+        <Header/>
                 <div className="container">
                     <div className="picture">
-                        <img src={book.image_url} alt="#"/>
+                        <img src={book.img} alt="#"/>
                     </div>
                 <div className="content">
                     <div className="form">
@@ -51,11 +60,11 @@ const AdminEditBook=()=>{
                     </div>
                     <div className="form">
                         <label>price</label>
-                        <input className="price-input familar" type="Number" name="price" value={33} onChange={handlechange}/>
+                        <input className="price-input familar" type="Number" name="price" value={book.price} onChange={handlechange}/>
                     </div>
                     <div className="form">
                         <label>totalsells</label>
-                        <input className="totalsells-input familar" type="Number" name="totalsells" value={33} onChange={handlechange}/>
+                        <input className="totalsells-input familar" type="Number" name="totalsells" value={book.totalSells} onChange={handlechange}/>
                     </div>
                     <div>
                         <button onClick={handlesubmit} className="submit">Submit</button>
@@ -64,6 +73,7 @@ const AdminEditBook=()=>{
                 </div>
                 
                </div>
+               <Footer/>
                
         </div>
     )

@@ -1,4 +1,5 @@
 .main{
+    background-image: url("../../../../assets/hero.jpg");
     background-size:100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -73,24 +74,24 @@
 .book img:hover{
     transform: scale(1.1);
 }
-.main .header
+.main .head
 {
     text-align: center;
 }
-.main .header{
+.main .head{
     margin-bottom: 30px;
 }
-.main .header h1{
+.main .head h1{
 color: rgb(216, 73, 16);
 margin-bottom: 10px;
 }
-.main .header input{
+.main .head input{
     width: 300px;
-    height: 20px;
+    height: 30px;
     border: 1px solid rgb(180, 168, 168);
     outline: none;
     background: #fff;
-    padding: 10px 10px;
+    padding: 20px 20px;
     border-radius: 10px;
     background: none;
 }

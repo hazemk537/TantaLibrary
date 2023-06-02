@@ -6,7 +6,7 @@ const Books=(props)=>{
     return (
         <div key={props.books.id} className="book">
                <h3>{props.books.title}</h3>
-               <img src={props.books.image_url} alt="#" onClick={()=>
+               <img src={props.books.img} alt="#" onClick={()=>
                  navigate(`/Books/${props.books.id}`)
                }/>
         </div>

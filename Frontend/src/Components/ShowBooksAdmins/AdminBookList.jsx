@@ -4,6 +4,8 @@ import axios from "axios"
 // import Books from "./Books";
 import "../ShowBooks/BookList.css"
 import "./ShowBooksAdmins.css"
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 function AdminBookList (){
     const [books,setbooks]=useState([]);
@@ -16,17 +18,17 @@ function AdminBookList (){
 
         const fetchdata=()=>
         {
-           axios.get("https://example-data.draftbit.com/books").then((res)=>{  //api for get all books
+           axios.get("http://localhost:3001/Books").then((res)=>{  //api for get all books
            setresult(res.data);
            setbooks(res.data);
            }).catch((error)=>{console.log(error);})
         }
 
-    const handlechange=async(event)=>{
-        const res= await result.filter(f=>f.title.toLowerCase().includes(event.target.value));
-        setbooks(res);
-        fetchdata();
-    };
+        const handlechange=(event)=>{
+            const res=result.filter(f=>f.title.toLowerCase().includes(event.target.value));
+            setbooks(res);
+        };
+    
 
     // const handledelete=(id)=>{
     //     console.log("ahmed")
@@ -43,22 +45,19 @@ function AdminBookList (){
     const handledelete=(id)=>{
         console.log("ahmed")
         alert("are you sure you want to delete it")
-        axios.delete(`https://example-data.draftbit.com/books/${id}`)
-        .then((result)=>{
-             result.json().then((res)=>{
-                console.log(result);
+        axios.delete(`http://localhost:3001/Books/${id}`)
+            .then((res)=>{
                 fetchdata();
-            })
-        })
-    };
+            })};
     
     
 
     return(
         <div>
+            <Header/>
             <div className="main">
                 <div className="container">
-                    <div className="header">
+                    <div className="head">
                         <div>
                         <h1>find book </h1>
                         <input type="text" className="input-text" onChange={handlechange} placeholder="enter book"/>
@@ -78,7 +77,7 @@ function AdminBookList (){
                         {books.map((book)=>(
                             <div key={book.id} className="book">
                             <h3>{book.title}</h3>
-                            <img src={book.image_url} alt="#" onClick={()=>
+                            <img src={book.img} alt="#" onClick={()=>
                               navigate(`/Admins/Books/${book.id}`)
                             }/>
 
@@ -98,6 +97,7 @@ function AdminBookList (){
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }
