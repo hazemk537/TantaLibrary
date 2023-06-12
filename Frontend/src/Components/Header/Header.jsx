@@ -1,6 +1,7 @@
+import "../../App.css"
 const Header=()=>{
     return(
-        <div className="Header">
+        <div className="header">
             Header 
         </div>
     )

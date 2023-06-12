@@ -1,27 +1,29 @@
 const express = require("express")
 const mongoose =require("mongoose");
 const router = require("./routes/books-route");
-const loginRouter = require("./routes/login-route");
-const signUpRouter = require("./routes/register-route");
 const app=express()
-
 
 //routes
 app.use(express.json());
 
 app.use("/",router)
-app.use("/login", loginRouter);
-app.use("/signup", signUpRouter);
-
-
-
 
 //database connection
-mongoose.connect("mongodb+srv://AdminLibrary:muHN44RyYDA4arfc@cluster0.rmoc8zo.mongodb.net/?retryWrites=true&w=majority")
-.then(()=>{app.listen(3000)})
+mongoose.connect("mongodb://127.0.0.1:27017/Book_Store")
 .then(()=> console.log("connectd"))
 .catch((err)=>console.log(err))
 
+// app.get("/",(req,res)=>{
+//     res.send("hello world");
+// })
+
+app.listen(3001,()=>
+    console.log("listening"));
+
+
 // // Middlewares
-// app.use(cors());
+const cors = require('cors')
+app.use(cors());
+
+
 // app.use("/books", router); // localhost:5000/book

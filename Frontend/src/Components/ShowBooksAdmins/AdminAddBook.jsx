@@ -2,9 +2,11 @@ import axios from "axios";
 import {useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./ShowBooksAdmins.css"
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const AdminAddBook=()=>{
-    const [image_url,setimage]=useState("");
+    const [img,setimage]=useState("");
     const [title,settitle]=useState("");
     const [authors,setauthors]=useState("");
     const [description,setdescription]=useState("");
@@ -14,8 +16,8 @@ const AdminAddBook=()=>{
 
     const handlesubmit= async(e)=>{
         e.preventDefault();
-        axios.post("url-of-post",{
-            image_url,
+        axios.post("",{
+            img,
             title,
             authors,
             description,
@@ -44,6 +46,7 @@ const AdminAddBook=()=>{
     return(
         <div>
             <form className="post">
+        <Header/>
                <div className="content">
 
                <div className="form">
@@ -78,7 +81,7 @@ const AdminAddBook=()=>{
 
                <button onClick={handlesubmit} className="submit">Submit</button>
                </div>
-               
+               <Footer/>
         </form>
         </div>
     )
